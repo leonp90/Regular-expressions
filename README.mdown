@@ -1,0 +1,7 @@
+# Regular Expressions
+
+## The main goal of this exercise is practice with the regular expressions. 
+
+The exercise 1 filters a string with specific parameters using regular expressions.
+
+The conditions are 1 Upper case minimum and no numbers on the result.
