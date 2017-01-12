@@ -5,7 +5,7 @@ function string(S){
 	console.log(str);
 	for( var i=0; i< arr.length; i++ ){
 		if(arr[i].match(/^(?=.*[A-Z])/)){
-			long = arr[i].length;
+			long = (arr[i].length > long) ? arr[i].length : long;
 		}
 	}
 	return long;
