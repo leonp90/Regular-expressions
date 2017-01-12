@@ -1,12 +1,16 @@
 function string(S){
-	var str = S.replace(/[0-9]/g, " ");
-	var arr = str.split(" ");
-	var long = -1;
-	console.log(str);
-	for( var i=0; i< arr.length; i++ ){
-		if(arr[i].match(/^(?=.*[A-Z])/)){
-			long = (arr[i].length > long) ? arr[i].length : long;
-		}
-	}
-	return long;
-}
+	var password = S.replace(/[0-9]/g, " ");
+	var substring = password.split(" ");
+	var longest = -1;
+
+	substring.forEach(function(element){
+		let upperCase = /^(?=.*[A-Z])/;
+
+		if(element.match(upperCase)){
+			longest = (element.length > longest) ? element.length : longest;
+		};
+
+	});
+	return longest;
+};
+	
